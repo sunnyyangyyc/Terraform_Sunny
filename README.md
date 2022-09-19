@@ -5,14 +5,13 @@
 1.1 QA wants to quickly launch a staging environment with a certain repo code version for testing, how to implement it?
 
 Answer
-My understanding of this topic is ambiguous.In my previous work, if EKS wanted to define different environments, DevOps would create an EKS cluster and set two namespaces, UAT and PROD.
-
-But if this problem requires us to use the same code to create an infrasturcture, then DevOps can be achieved by changing the variable name or changing the tag.
+My understanding of this quearion is ambiguous.In my previous work, if EKS wanted to define different environments, DevOps engineer would create an EKS cluster and set two namespaces, UAT and PROD. But if this problem requires us to use the same code to create an infrasturcture, then DevOps engineer can be achieved by changing the variable name or changing the tag.
 
 1.2  Terraform remote state management, how to implement it？
-Answer: Remote state management via S3 and dynamoDB
+Answer: We could use remote state management via S3 and dynamoDB. and the relative tf file is 0-provider-artifact-repo.tf and 0-provider-backend.tf.
 
-1.3  How to control Pod-level IAM policies for security control
+
+1.3  How to control Pod-level IAM policies for security control?
 
 1.4  How to implement deployment strategy for version rollback
 load back pipeline
